@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import Navbar from "./components/layout/Navbar";
 import Glamours from "./components/pages/Glamours";
+import Upload from "./components/pages/Upload";
 
 const Home = function(props) {
   return <div>HOME</div>;
@@ -23,8 +24,12 @@ export default class App extends Component {
                 <Home />
               </Route>
 
-              <Route path='/glamours'>
+              <Route exact path='/glamours'>
                 <Glamours />
+              </Route>
+
+              <Route path='/glamours/upload'>
+                <Upload />
               </Route>
             </Switch>
           </div>

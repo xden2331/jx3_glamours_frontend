@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import queryString from "query-string";
 import axios from "axios";
-import { Link, Redirect, withRouter } from "react-router-dom";
-import { Container, Row, Col, Image, Form, Button } from "react-bootstrap";
+import { withRouter } from "react-router-dom";
+import { Container, Row, Col, Image, Form } from "react-bootstrap";
 
 const isEmpty = require("is-empty");
 

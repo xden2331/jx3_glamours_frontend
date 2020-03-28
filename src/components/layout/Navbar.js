@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 export default class Navbar extends Component {
   render() {
@@ -13,12 +13,15 @@ export default class Navbar extends Component {
             <span className='navbar-toggler-icon'></span>
           </button>
           <div className='navbar-nav d-none d-lg-flex'>
-            <NavLink exact to='/' className='nav-item nav-link'>
+            <NavLink to='/' className='nav-item nav-link'>
               Home
             </NavLink>
-            <Link to='/glamours/' className='nav-item nav-link'>
+            <NavLink to='/glamours/' className='nav-item nav-link'>
               Glamours
-            </Link>
+            </NavLink>
+            <NavLink to="/glamours/upload" className='nav-item nav-link'>
+              Upload
+            </NavLink>
           </div>
         </div>
       </nav>
