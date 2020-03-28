@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+body {
+  background-color: #28334aff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+label,
+p {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav {
+  background-color: #28334a88;
+  border-bottom: 3px solid #f65059ff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: white;
+}
+
+.active {
+  color: red;
+}
+
+#section {
+  border-left: 3px solid #f65059ff;
+  padding: 10px 10px;
+  margin: 7rem 0 3rem 0;
+}
+#section span {
+  font-weight: 100;
+  color: #f65059ff;
+}
+
+.outfit-list .outfit-item {
+  padding: 0.5rem 0.5rem;
+}
+.outfit-list .outfit-item img {
+  min-height: 320px;
+  max-height: 320px;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.clan-icon {
+  margin: 0.3rem;
+}
+.clan-icon img {
+  width: 2rem;
+  height: 2rem;
+}
+
+.rounded {
+  border-radius: 0.5rem !important;
+}
+
+.unselected {
+  filter: brightness(30%);
+}
+
+.search-group button {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  color: #f65059ff;
+  padding: 0.3rem 0;
+  margin: 0.15rem 0;
+  border: 0.1rem solid #f65059ff;
+}
+.search-group button:hover {
+  background-color: #f65059ff;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .outfit-list {
+    padding-left: 2rem;
+    margin-left: 1.5rem;
+    border-left: 2px solid #535353;
   }
 }
+
+/*# sourceMappingURL=App.css.map */

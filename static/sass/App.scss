@@ -1,0 +1,104 @@
+$primary-color: #28334aff;
+$primary-color-half-alpha: #28334a88;
+$secondary-color: #f65059ff;
+
+body {
+  background-color: $primary-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+label,
+p {
+  color: white;
+}
+
+nav {
+  background-color: $primary-color-half-alpha;
+  border-bottom: 3px solid $secondary-color;
+}
+
+.navbar-dark {
+  .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  }
+  .navbar-nav {
+    .nav-link {
+      color: white;
+    }
+  }
+}
+
+.active {
+  color: red;
+}
+
+#section {
+  border-left: 3px solid $secondary-color;
+  padding: 10px 10px;
+  margin: 7rem 0 3rem 0;
+
+  span {
+    font-weight: 100;
+    color: $secondary-color;
+  }
+}
+
+.outfit-list {
+  .outfit-item {
+    padding: 0.5rem 0.5rem;
+    img {
+      min-height: 320px;
+      max-height: 320px;
+      min-width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.clan-icon {
+  margin: 0.3rem;
+  img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+
+.rounded {
+  border-radius: 0.5rem !important;
+}
+
+.unselected {
+  filter: brightness(30%);
+}
+
+.search-group {
+  button {
+    width: 100%;
+    background-color: rgba($color: #000000, $alpha: 0);
+    color: $secondary-color;
+    padding: 0.3rem 0;
+    margin: 0.15rem 0;
+    border: 0.1rem solid $secondary-color;
+  }
+  button:hover {
+    background-color: $secondary-color;
+    color: white;
+  }
+}
+
+$xl: 1200px;
+$lg: 992px;
+
+@media (min-width: $lg) {
+  .outfit-list {
+    padding-left: 2rem;
+    margin-left: 1.5rem;
+    border-left: 2px solid rgb(83, 83, 83);
+  }
+}
