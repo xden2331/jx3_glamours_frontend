@@ -30,10 +30,13 @@ nav {
   color: red;
 }
 
+.main {
+  margin: 7rem 0 3rem 0;
+}
+
 #section {
   border-left: 3px solid #f65059ff;
   padding: 10px 10px;
-  margin: 7rem 0 3rem 0;
 }
 #section span {
   font-weight: 100;

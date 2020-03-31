@@ -19,19 +19,21 @@ export default class App extends Component {
           <Navbar />
 
           <div className='container'>
-            <Switch>
-              <Route exact path='/'>
-                <Home />
-              </Route>
+            <div className='main'>
+              <Switch>
+                <Route exact path='/'>
+                  <Home />
+                </Route>
 
-              <Route exact path='/glamours'>
-                <Glamours />
-              </Route>
+                <Route exact path='/glamours'>
+                  <Glamours />
+                </Route>
 
-              <Route path='/glamours/upload'>
-                <Upload />
-              </Route>
-            </Switch>
+                <Route path='/glamours/upload'>
+                  <Upload />
+                </Route>
+              </Switch>
+            </div>
           </div>
         </div>
       </Router>
